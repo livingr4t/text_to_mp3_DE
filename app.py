@@ -59,5 +59,6 @@ def upload_file():
     except Exception as e:
         return f"Błąd: Wystąpił nieoczekiwany problem: {str(e)}", 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Dodanie hosta i portu dla Render
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
