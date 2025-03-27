@@ -6,8 +6,8 @@ import os
 app = Flask(__name__)
 
 # Ręczne ustawienie ścieżek do FFmpeg i FFprobe
-AudioSegment.converter = "C:/ProgramData/chocolatey/lib/ffmpeg/tools/ffmpeg/bin/ffmpeg.exe"
-AudioSegment.ffprobe = "C:/ProgramData/chocolatey/lib/ffmpeg/tools/ffmpeg/bin/ffprobe.exe"
+AudioSegment.converter = "ffmpeg"
+AudioSegment.ffprobe = "ffprobe"
 
 @app.route('/')
 def home():
