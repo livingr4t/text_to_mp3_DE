@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, render_template
 from gtts import gTTS
 from pydub import AudioSegment
 import os
@@ -11,16 +11,7 @@ AudioSegment.ffprobe = "ffprobe"
 
 @app.route('/')
 def home():
-    return '''
-        <h1>Konwersja tekstu na mowę, język niemiecki</h1>
-        <form method="POST" action="/upload" enctype="multipart/form-data">
-            <label>Wczytaj plik TXT:</label><br>
-            <input type="file" name="file" accept=".txt" required><br><br>
-            <label>Czas pauzy między zdaniami (w sekundach):</label><br>
-            <input type="number" name="pause" value="1" min="1" required><br><br>
-            <button type="submit">Prześlij i wygeneruj MP3</button>
-        </form>
-    '''
+    return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
