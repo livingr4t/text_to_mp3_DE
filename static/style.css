@@ -1,10 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 body { 
     background-color: black;
-    font-family: Cinzel, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Cinzel', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
+
 #navbar {
     height: 50%;
     width: 10%;
@@ -13,21 +16,25 @@ body {
     top: 40px;
     left: 100%;
 }
+
 #navbar ul {
     display: list-item;
     justify-content: space-evenly;
     vertical-align: center;
     list-style: none;
 }
+
 #navbar ul li {
     height: 60px;
 }
+
 #navbar ul li a {
     color: white;
     text-decoration: none; 
     opacity: 0.7;
     font-size: 1.3rem;
 }
+
 #navbar ul li a:hover {
     color: red;
     opacity: 0.7;
@@ -35,36 +42,20 @@ body {
     font-weight: bolder;
     transition: all 0.45s;
 }
-#rest{
+
+#rest {
     width: 80%;
 }
-#intro-section {
+
+#intro-section, #about-section, #skills-section, #projects-section, #contacts-section {
     color: white;
     height: 700px;
 }
+
 h1 {
     font-size: 3rem;
 }
-#about-section {
-    color: white;
-    height: 700px;
 
-}
-#skills-section {
-    color: white;
-    height: 700px;
-
-}
-#projects-section {
-    color:white;
-    height: 700px;
-
-}
-#contacts-section {
-    color: white;
-    height: 700px;
-
-}
 .spaceship {
     height: 3px;
     width: 2px;
